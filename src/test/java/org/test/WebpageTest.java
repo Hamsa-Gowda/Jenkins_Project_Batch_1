@@ -13,7 +13,7 @@ public class WebpageTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         Thread.sleep(2000);
-        driver.get(" ");
+        driver.get("  ");
     }
     @Test
     public void titleValidationTest(){
