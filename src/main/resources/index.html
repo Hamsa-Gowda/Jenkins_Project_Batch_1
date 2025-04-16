@@ -1,77 +1,131 @@
-<!DOCTYPE html>
-<html lang="en">
+<! DOCTYPE html>
+
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tripillar Solutions</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<meta charset="utf-8">
+
+<style>
+
+html {
+height: 100%; display: flex;
+align-items: center; justify-content: center;
+font-family: 'Cookie', cursive;
+}
+
+input[type=button] {
+width: 60px; 
+height: 60px;
+float: left;
+padding: 0; 
+margin: 5px;
+box-sizing: border-box;
+background: white; 
+border: none;
+font-size: 30px; 
+line-height: 30px;
+border-radius: 20%;
+font-weight: 700; 
+color: black; 
+cursor: pointer;
+}
+
+input[type=text] {
+width: 270px;
+height: 60px; 
+float: left; 
+padding: 0;
+box-sizing: border-box; 
+border: none; 
+background: none; 
+color:Black;
+text-align: right; 
+font-weight: 700; 
+font-size: 60px; 
+line-height: 60px; 
+margin: 0 25px;
+
+}
+
+.calculator {
+background-color: white; 
+border: 5px solid black; 
+border-radius: 10px;
+}
+
+#display {
+
+height: 40px; 
+text-align: right;
+background-color: white; 
+border: 3px solid black; 
+font-size: 20px;
+left: 2px; 
+top: 2px; 
+color: black;
+}
+
+.btnTop {
+color: white;
+background-color:white;
+font-size: 10%; 
+margin: auto; 
+width: 50%px; 
+height: 25%;
+}
+
+</style>
+
 </head>
+
 <body>
+ 
+<form name="Calculator" class = "calculator" >
 
-<!-- Header Section -->
-<header>
-    <div class="container">
-        <h1>Tripillar Solutions</h1>
-        <img src="logo.png" alt="Tri Pillar Logo" title="Tripillar">
-        <nav>
-            <a href="#services">Services</a>
-            <a href="#address">Address</a>
-            <a href="#contact">Contact Us</a>
-        </nav>
-    </div>
-</header>
+<table border="2" align="center" cellpadding="15" cellspacing="12" bgcolor="grey">
+<tr>
+<td>
+<input type="text" name="Input" Size="40" id="display">
 
-<!-- Content Section -->
-<div class="content">
-    <!-- Services Section -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <p>
-            Designed and curated specially for colleges and other educational institutions to upskill their students and provide them with appropriate career opportunities.
-        </p>
-        <div class="services">
-            <div class="service">
-                <h3>Corporate Training Programs</h3>
-                <p>
-                    Human resource is the most valuable asset of a company, and any company that invests in employee development is investing in their own success.
-                </p>
-            </div>
-            <div class="service">
-                <h3>Skill Development Program</h3>
-                <p>
-                    Embark on a transformative journey with Tripillar Solution's Skill Development Program, where we empower individuals to unlock their full potential and excel in today's dynamic workforce.
-                </p>
-            </div>
-            <div class="service">
-                <h3>Employment Readiness Training</h3>
-                <p>
-                    Tripillar Solution's Employment Readiness Training is a comprehensive program designed to equip individuals with the essential skills and knowledge needed to thrive in today's competitive job market.
-                </p>
-            </div>
-        </div>
-    </section>
+<br>
 
-    <!-- Address Section -->
-    <section id="address">
-        <h2>Address Info</h2>
-        <p>
-            #4/259, Sutihara Ram, Parihar, Sitamarhi, Bihar 843331<br>
-            <strong>Telephone:</strong> +91 8497047833<br>
-            <strong>Email:</strong> <a href="mailto:info@tripillar.org">info@tripillar.org</a>
-        </p>
-    </section>
-</div>
+</td>
+</tr>
 
-<!-- Footer Section -->
-<footer>
-    <p>&copy; 2025 Tripillar Solutions. All Rights Reserved.</p>
-    <p>
-        <a href="https://facebook.com" target="_blank">Facebook</a> |
-        <a href="https://twitter.com" target="_blank">Twitter</a> |
-        <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-    </p>
-</footer>
+<tr>
 
+<td>
+
+<br>
+<input	type="button" name="seven" style="font-size:30px" value=" 7 " OnClick="Calculator.Input.value += '7'">
+<input	type="button" name="eight" style="font-size:30px" value=" 8 " OnCLick="Calculator.Input.value += '8'">
+<input	type="button" name="nine" style="font-size:30px" value=" 9 " OnClick="Calculator.Input.value += '9'">
+<input	type="button" name="mul" style="font-size:30px" value=" * " OnClick="Calculator.Input.value += ' * '">
+
+<br>
+<input	type="button" name="four" style="font-size:30px" value=" 4 " OnClick="Calculator.Input.value += '4'">
+<input	type="button" name="five" style="font-size:30px" value=" 5 " OnCLick="Calculator.Input.value += '5'">
+<input	type="button" name="six" style="font-size:30px"	value=" 6 " OnClick="Calculator.Input.value += '6'">
+<input	type="button" name="minus" style="font-size:30px" value=" - " OnClick="Calculator.Input.value += '-'">
+
+<br>
+<input	type="button" name="one" style="font-size:30px"	value=" 1 " OnClick="Calculator.Input.value += '1'">
+<input	type="button" name="two" style="font-size:30px"	value=" 2 " OnCLick="Calculator.Input.value += '2'">
+<input	type="button" name="three" style="font-size:30px" value=" 3 " OnClick="Calculator.Input.value += '3'">
+<input type="button" name="add" class ="btnTop" style="font-size:30px" value=" + " OnClick="Calculator.Input.value += ' + '">
+
+<br>
+<input	type="button" name="zero" style="font-size:30px" value=" 0 " OnClick="Calculator.Input.value += '0'">
+<input	type="button" name="clear" style="font-size:30px" value=" C " OnClick="Calculator.Input.value = ''">
+<input	type="button" name="DoIt" style="font-size:30px" value=" = " OnClick="Calculator.Input.value = eval(Calculator.Input.value)">
+<input	type="button" name="div" style="font-size:30px"	value=" / " OnClick="Calculator.Input.value += ' / '">
+
+<br>
+</td>
+
+</tr>
+</table>
+</form>
 </body>
 </html>
+
